@@ -17,7 +17,7 @@ end
 
 local files = scandir(".")
 
-for tmp, old_name in pairs(files) do
+for _, old_name in pairs(files) do
 	local found = string.find(old_name, ".png")
 	if found then
 		-- let trim them :
